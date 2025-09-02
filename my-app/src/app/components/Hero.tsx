@@ -87,7 +87,7 @@ export default function HeroSection() {
       {/* Right Image */}
       <div className="home-img px-20">
         <Image
-          src="/images/babarbamsi.png"
+          src="/Images/babarbamsi.png"
           alt="Babar Mehmood"
           width={500}
           height={400}

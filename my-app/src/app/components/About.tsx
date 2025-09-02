@@ -14,7 +14,7 @@ const About = () => {
       {/* Left Side Image */}
       <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
         <Image
-          src="/images/babarabout.png"
+          src="/Images/babarabout.png"
           alt="About Me"
           width={500}
           height={500}
