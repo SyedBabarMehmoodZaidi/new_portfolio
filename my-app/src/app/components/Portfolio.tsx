@@ -86,16 +86,16 @@ const projects: Project[] = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="bg-gray-900 text-white px-6 py-16">
+    <section id="portfolio" className="bg-gray-900 text-white px-6 py-16 ">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
         Latest <span className="text-cyan-400">Project</span>
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto ">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative rounded-2xl overflow-hidden group shadow-lg"
+            className="relative rounded-2xl overflow-hidden group shadow-[0_0_1rem_#0ef]"
           >
             <Image
               src={project.image}

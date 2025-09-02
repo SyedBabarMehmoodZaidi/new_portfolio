@@ -12,12 +12,15 @@
     "@google/generative-ai": "^0.24.1",
     "lucide-react": "^0.542.0",
     "next": "13.5.11",
+    "nodemailer": "^7.0.6",
     "openai": "^5.16.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",

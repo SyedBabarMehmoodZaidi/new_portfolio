@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Youtube} from "lucide-react"; // TikTok ka icon lucide-react me nahi hai, uske liye fontawesome use kar sakte hain ya emoji 🔥
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
   return (
@@ -13,9 +14,30 @@ export default function HeroSection() {
       <div className="home-content max-w-xl">
         <h3 className="text-3xl font-bold">Hello, It's me</h3>
         <h1 className="text-6xl font-extrabold leading-tight">BABAR MEHMOOD</h1>
+        
         <h3 className="text-3xl font-bold mb-6">
-          And I'm a <span className="text-main">Web Developer</span>
+          And I'm a{" "}
+          <span className="text-main text-4xl">
+            <Typewriter
+              words={[
+                "Full Stack Developer",
+                "UI/UX Designer",
+                "Frontend Developer",
+                "Backend Developer",
+                "API Developer & Integrator",
+                "Web Developer",
+                "Responsive Design Expert",
+              ]}
+              loop={0} // 0 means infinite loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={80}   // typing speed
+              deleteSpeed={50} // deleting speed
+              delaySpeed={1500} // delay before next word
+            />
+          </span>
         </h3>
+
         <p className="text-lg leading-relaxed mb-8">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut in eos,
           voluptatibus adipisci dolor architecto?
@@ -51,7 +73,6 @@ export default function HeroSection() {
           >
             <Youtube size={22} />
           </a>
-         
         </div>
 
         {/* Button */}
@@ -64,11 +85,11 @@ export default function HeroSection() {
       </div>
 
       {/* Right Image */}
-      <div className="home-img">
+      <div className="home-img px-20">
         <Image
           src="/images/babarbamsi.png"
           alt="Babar Mehmood"
-          width={400}
+          width={500}
           height={400}
           className="rounded-[10%] border-2 border-main shadow-[0_0_4rem_#0ef] animate-float"
         />

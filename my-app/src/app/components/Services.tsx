@@ -10,6 +10,8 @@ interface Service {
   description: string;
 }
 
+
+
 const services: Service[] = [
   {
     id: 1,
@@ -51,6 +53,16 @@ const services: Service[] = [
   },
 ];
 
+const tickerTexts = [
+  "We design and develop Modern, Dynamic Websites.",
+  "We build Scalable Frontend Experiences (React, Next.js, TailwindCSS, TypeScript).",
+  "We develop Secure & High-Performance Backends (Node.js, FastAPI).",
+  "We implement Efficient API Development & Integrations.",
+  "We deliver Customized E-Commerce Solutions.",
+  "We create Professional Portfolio & Corporate Websites.",
+  "We craft Responsive, User-Friendly UI/UX Experiences.",
+];
+
 const Services = () => {
   const [expanded, setExpanded] = useState<number | null>(null);
 
@@ -68,7 +80,7 @@ const Services = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-gray-800 rounded-2xl border border-gray-700 p-8 text-center hover:border-cyan-400 hover:scale-105 transition"
+            className="bg-gray-800 rounded-2xl border  border-gray-700 shadow-[0_0_1rem_#0ef] p-8 text-center hover:border-cyan-400 hover:scale-105 transition"
           >
             {service.icon}
             <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
@@ -93,7 +105,24 @@ const Services = () => {
           </div>
         ))}
       </div>
+
+      {/* News Ticker Line */}
+      <div className="w-full overflow-hidden bg-transparent py-32">
+        <div className="whitespace-nowrap flex gap-16 animate-marquee">
+          {tickerTexts.map((text, index) => (
+            <span
+              key={index}
+              className="text-cyan-400 text-6xl font-medium tracking-wide"
+            >
+              {text}
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
+
+    
+    
   );
 };
 

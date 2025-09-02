@@ -18,7 +18,7 @@ const About = () => {
           alt="About Me"
           width={500}
           height={500}
-          className="rounded-xl border-2 border-cyan-400 shadow-[0_0_40px_#0ef]"
+          className="rounded-xl border-2 border-cyan-400 shadow-[0_0_4rem_#0ef] animate-float"
         />
       </div>
 
