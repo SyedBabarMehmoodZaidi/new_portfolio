@@ -12,11 +12,11 @@ export default function HeroSection() {
     >
       {/* Left Content */}
       <div className="home-content max-w-xl">
-        <h3 className="text-3xl font-bold">Hello, It's me</h3>
+        <h3 className="text-3xl font-bold">Hello, It&apos;s me</h3>
         <h1 className="text-6xl font-extrabold leading-tight">BABAR MEHMOOD</h1>
         
         <h3 className="text-3xl font-bold mb-6">
-          And I'm a{" "}
+          And I&apos;m a{" "}
           <span className="text-main text-4xl">
             <Typewriter
               words={[
