@@ -68,7 +68,7 @@ export default function Contact() {
           {/* Left Side Info */}
           <div className="bg-gradient-to-br from-cyan-400 to-blue-500 text-black p-8 flex flex-col justify-center">
             <h2 className="text-3xl font-bold mb-2">Contact Information</h2>
-            <div className="w-20 h-1 bg-black mb-6"></div>
+
 
             <p className="mb-6">
               Feel free to get in touch with us. We are always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
