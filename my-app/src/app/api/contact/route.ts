@@ -12,14 +12,15 @@ export async function POST(req: NextRequest) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER, // your email
-        pass: process.env.EMAIL_PASS, // your email app password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: email,
-      to: process.env.EMAIL_USER, // email of website owner
+      from: process.env.EMAIL_USER,   // ✅ fix
+      replyTo: email,                 // ✅ fix
+      to: process.env.EMAIL_USER,
       subject: `New Contact Message: ${subject || "No Subject"}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -33,7 +34,10 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ message: "Email sent successfully!" });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ message: "Failed to send email." }, { status: 500 });
+    console.error("❌ Contact API Error:", error);
+    return NextResponse.json(
+      { message: "Failed to send email." },
+      { status: 500 }
+    );
   }
 }
