@@ -20,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <Header />
       <Assistant />
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+        {children}
+        </body>
     </html>
   )
 }
