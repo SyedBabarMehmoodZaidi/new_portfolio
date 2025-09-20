@@ -43,14 +43,14 @@ const projects: Project[] = [
   {
     id: 5,
     title: "Apna Ghar",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, assumenda?",
+    description: "Apna Ghar",
     image: "/Images/project5.png",
     link: "https://estate-agency-green.vercel.app/",
   },
   {
     id: 6,
     title: "Manzzari",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, assumenda?",
+    description: "Jewelry Landing Page",
     image: "/Images/project6.png",
     link: "https://manzzari-figma.vercel.app/",
   },
