@@ -82,6 +82,13 @@ const projects: Project[] = [
     image: "/Images/project10.png",
     link: "https://interior-designer-five.vercel.app/",
   },
+   {
+    id: 11,
+    title: "Stylish Shoes",
+    description: "SHOES.",
+    image: "/Images/project11.png",
+    link: "https://stylish-shoe.vercel.app/",
+  },
 ];
 
 const Portfolio = () => {
