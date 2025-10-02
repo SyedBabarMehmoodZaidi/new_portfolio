@@ -12,8 +12,8 @@ export default function Footer() {
     <Typewriter
       words={[
         "We do Website Design & Development",
-        "We do Frontend Development (React, Next.js, TailwindCSS, TypeScript)",
-        "We do Backend Development (Node.js, FastAPI)",
+        "We do Frontend Development ",
+        "We do Backend Development ",
         "We do API Integration & Development",
         "We do E-Commerce Website Development",
         "We do Portfolio & Business Websites",

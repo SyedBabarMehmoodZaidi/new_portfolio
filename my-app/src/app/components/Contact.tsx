@@ -57,6 +57,7 @@ export default function Contact() {
   };
 
   return (
+    <>
     <section id="contact" className="py-20 px-6 bg-gray-900 text-white">
       <h2 className="text-4xl font-bold text-center mb-12">
         Contact <span className="text-cyan-400">Me!</span>
@@ -182,5 +183,18 @@ export default function Contact() {
         </div>
       </div>
     </section>
+
+    <section className="w-full h-[450px] mt-12 mb-12">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.312216515153!2d67.03467147610321!3d24.921431677889593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f99a8e07b27%3A0x5ae52d4e4349c1f1!2zTm9ydGggSGVhdmVu25Qg2YbYp9ix2KraviDbgduM2YjZhiBIYXNzYW4ncyBIb21l!5e0!3m2!1sen!2s!4v1754995022841!5m2!1sen!2s" 
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</section>
+    </>
   );
 }
