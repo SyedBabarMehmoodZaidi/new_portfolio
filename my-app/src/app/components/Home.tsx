@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Skills from "./Skills";
+import ResumeBuilder from "./Resume";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Services />
         <Skills />
         <Portfolio />
+        <ResumeBuilder />
         <Contact />
         <Footer />
     </div>

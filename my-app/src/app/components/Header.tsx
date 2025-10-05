@@ -19,6 +19,7 @@ export default function Navbar() {
         <a href="#about" className="text-lg text-text hover:text-main transition">About</a>
         <a href="#services" className="text-lg text-text hover:text-main transition">Services</a>
         <a href="#portfolio" className="text-lg text-text hover:text-main transition">Portfolio</a>
+        <a href="#resume" className="text-lg text-text hover:text-main transition">Generate Resume</a>
         <a href="#contact" className="text-lg text-text hover:text-main transition">Contact</a>
       </nav>
 
@@ -37,6 +38,7 @@ export default function Navbar() {
           <a href="#about" className="text-lg text-text hover:text-main transition" onClick={() => setIsOpen(false)}>About</a>
           <a href="#services" className="text-lg text-text hover:text-main transition" onClick={() => setIsOpen(false)}>Services</a>
           <a href="#portfolio" className="text-lg text-text hover:text-main transition" onClick={() => setIsOpen(false)}>Portfolio</a>
+          <a href="#resume" className="text-lg text-text hover:text-main transition" onClick={() => setIsOpen(false)}>Generate Resume</a>
           <a href="#contact" className="text-lg text-text hover:text-main transition" onClick={() => setIsOpen(false)}>Contact</a>
         </nav>
       )}
