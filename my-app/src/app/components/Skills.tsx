@@ -18,6 +18,7 @@ const skillsRow2 = [
   { name: "Tailwind CSS", icon: "/Images/TailwindCSS.png", link: "https://tailwindcss.com/docs" },
   { name: "Node.js", icon: "/Images/Node.js.png", link: "https://nodejs.org/en/docs" },
   { name: "MongoDB", icon: "/Images/MongoDB.png", link: "https://www.mongodb.com/docs/" },
+  { name: "Bootstrap", icon: "/Images/bootstrap.png", link: "https://getbootstrap.com/" },
 ];
 
 export default function Skills() {
